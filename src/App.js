@@ -1,4 +1,4 @@
-import react,{useState} from 'react';
+import React,{useState} from 'react';
 import Song from './component/Song'
 import Player from './component/Player'
 import './styles/app.scss'
