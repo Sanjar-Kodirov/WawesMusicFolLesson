@@ -16,8 +16,6 @@ function App() {
         isPlaying={isPlaying} 
         setIsPlaying={setIsPlaying} 
         currentSong={currentSong} />
-      
-
     </div>
   );
 }
