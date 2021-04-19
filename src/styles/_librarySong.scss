@@ -1,0 +1,21 @@
+.library-song-cont{
+    display:flex;
+    align-items: center;
+    margin: 2rem 0;
+    padding:1rem;
+    .library-song-name{
+        padding: 0.3rem;
+    }
+    img{    
+        width: 30%;
+        border-radius: 50%;
+    }
+    &:hover{
+        background: #00adb5;
+        color: #fff;
+        .library-song-name{
+            color: #fff;
+        }
+    }
+
+}
