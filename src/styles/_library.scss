@@ -1,9 +1,16 @@
 .library{
-    width: 20rem;
+    width: 30rem;
     position: fixed;
     height: 100%;
     left: 0;
     top: 0;
     box-shadow: 2px 2px 50px rgb(204, 204, 204);
     overflow: scroll;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.active-library{
+    transform: translateX(0);
+    opacity: 1;
 }

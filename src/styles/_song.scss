@@ -1,3 +1,22 @@
+nav{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    button{
+        outline: none;
+        border: none;
+        background: #333;
+        color: #fff;
+        padding:1rem 2rem;
+        transition: 0.1s ease-in-out;
+        &:active{
+            background: #8898
+        }
+    }
+}
 .song-container{
     min-height: 60vh;
     display:flex;

@@ -9,14 +9,23 @@ function App() {
   const [songs, setSongs] = useState(data())
   const [currentSong, setCurrentSong] = useState(songs[0])
   const [isPlaying, setIsPlaying] = useState(false)
-  console.log(songs)
+  const [libraryStatus, setLibraryStatus] = useState(false)
   return (
     <div className="App">
-      <Library currentSong={currentSong} songs={songs} />
-      <Song currentSong={currentSong} />
+      <Library 
+        setCurrentSong={setCurrentSong}
+        currentSong={currentSong} 
+        libraryStatus={libraryStatus}
+        songs={songs} />
+      <Song 
+          currentSong={currentSong}
+          setLibraryStatus={setLibraryStatus}
+          libraryStatus={libraryStatus} />
       <Player 
+        songs={songs}
         isPlaying={isPlaying} 
         setIsPlaying={setIsPlaying} 
+        setCurrentSong={setCurrentSong}
         currentSong={currentSong} />
     </div>
   );
